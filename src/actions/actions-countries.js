@@ -3,6 +3,7 @@ export const GET_COUNTRY = 'GET_COUNTRY';
 export const DELETE_COUNTRY = 'DELETE_COUNTRY';
 export const SEARCH_COUNTRIES = 'SEARCH_COUNTRIES';
 export const SET_CONTINENT = 'SET_CONTINENT';
+export const ADD_COUNTRY = 'ADD_COUNTRY';
 
 
 export function getCountries() {
@@ -38,3 +39,18 @@ export function setContinent(name) {
         name
     }
 }
+
+export function addCountry(name, currency, populace, capital, continent, imageUrl) {
+    return {
+        type: ADD_COUNTRY,
+        name,
+		currency,
+		populace,
+		capital,
+		continent,
+		imageUrl
+    }
+}
+
+
+				
